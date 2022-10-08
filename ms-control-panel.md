@@ -21,8 +21,8 @@ The firewall analyzes the packets coming to the computer or network and sees if 
 **Create a Simple Windows Firewall Rule**
 
 * We can specify whether a firewall rule applies to LAN/WAN/remote access/all of these modes of operation of the computer. 
-    1. Create a rule to block incoming packets: 
-    `Windows Firewall → Allow a program or feature through Windows Firewall → clear the boxes under File and Printer Sharing`
+    * Create a rule to block incoming packets: 
+    `Windows Firewall -> Allow a program or feature through Windows Firewall -> clear the boxes under File and Printer Sharing`
 
 **Power Options**
 * Hibernate option: shuts the machine, but open applications are stored in memory.
