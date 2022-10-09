@@ -36,7 +36,7 @@ The firewall analyzes the packets coming to the computer or network and sees if 
 * We can use the Network and Sharing Center to share the local machine's media to the other machines on the network. 
 
 **Using Device Manager**
-* The Devlice Manager contains the list of all the internal and external peripheral devices of the computer system. It has the human interface devices, processors, disk drives, network adapters, and many other hardware devices. 
+* The Device Manager contains the list of all the internal and external peripheral devices of the computer system. It has the human interface devices, processors, disk drives, network adapters, and many other hardware devices. 
 
 **Facts:**
 * The private network, domain network, and public network are available in Windows Firewall in Windows 10.
