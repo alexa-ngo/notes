@@ -4,6 +4,7 @@
 
 We can use these built-in functions to see if an object has a particular attribute.
 * ```hasattr``` 
+* ```getattr```: 
 * ```vars``` : takes  an object and returns a dictionary that maps from attribute names (as strings) to their values:
 ``` 
 p = Point(3,4)
