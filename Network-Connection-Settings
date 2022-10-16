@@ -1,0 +1,16 @@
+#Network Connections
+
+### NIC Properties
+* can be viewed through Device Manager
+* General, Advanced, Driver, Details, Resources, Power Management tab
+* Wake-on-LAN
+
+#Configure Static IP Address on the Wireless Router
+
+The IP addresses that are used within a network uses the following network IP addresses: 
+* 10.x.x.x
+* 172.16.x.x to 172.31.x.x
+* 192.168.x.x 
+
+Private network IP address ranges are considered to be non-routable and cannot be used on the Internet.
+For an IP address to be used on the Internet, it needs to be a public IP address. 
