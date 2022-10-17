@@ -57,7 +57,7 @@ Here the:
 
 Square has inherited the area and perimeter methods of Rectangle, so they do not need to be defined in the Square class. However we need to re-define the constructor in Square because it needs to behave differently than the Rectangle constructor. This is an example of **overriding** a method. To override a method, we need to define it, using the same name, in the child class.
 
-Even if we override a method, we can sometimes still make use of the parent's version of the method. We can do this with **super()**, which gives us a temporary object of the parent class that we can use to call its meethods. We can use super() to rewrite the Square class like this: 
+Even if we override a method, we can sometimes still make use of the parent's version of the method. We can do this with **super()**, which gives us a temporary object of the parent class that we can use to call its methods. We can use super() to rewrite the Square class like this: 
 
 ```
 class Square(Rectangle):
@@ -203,7 +203,7 @@ Different languages have different ways of implementing polymorphism. In some la
 ### Duck Typing ###
 Python uses the approach of "duck typing". If it walks like a duck and quacks like a duck, then it must be a duck. If a piece of code wants to call certain methods on an object, it will work as long as those methods are defined for that object, regardless of the actual type of the object.
 
-* If class B inherits from class A, then it has the same methods, so a function can operate on objects of both clases in the same way. 
+* If class B inherits from class A, then it has the same methods, so a function can operate on objects of both classes in the same way. 
 
 However, inheritance is not required for polymorphism in Python. 
 
