@@ -16,8 +16,7 @@
 # Algorithm Analysis
 
 Analysis of algorithms is a branch of computer science that studies the performance of algorithms. We need to consider how much time we are using. The algorithm that we are using determines the order of growth. 
-separating the algorithm from the implementation on a particular computer is a powerful concept because it allows us to develop knowledge about the performance of algorithms and then apply that knowledge to any computer. 
-Are we more considered with the time, or using up the least amount of space (memory)? The analysis is to help us make detailed and accurate *predictions*. 
+Are we more considered with the time, or using up the least amount of space (memory)? The analysis is to help us make detailed and accurate *predictions*.
 
 ### Scientific Method
 * observe
