@@ -5,7 +5,7 @@
 * General, Advanced, Driver, Details, Resources, Power Management tab
 * Wake-on-LAN
 
-#Configure Static IP Address on the Wireless Router
+### Configure Static IP Address on the Wireless Router
 
 The IP addresses that are used within a network uses the following network IP addresses: 
 * 10.x.x.x
@@ -14,3 +14,37 @@ The IP addresses that are used within a network uses the following network IP ad
 
 Private network IP address ranges are considered to be non-routable and cannot be used on the Internet.
 For an IP address to be used on the Internet, it needs to be a public IP address. 
+
+### Wired Network Cards
+* Signaling speed
+* Duplex settings
+
+### Onbaord Network Adapters
+* Built into the motherboard
+* Controlled by the chipset
+* Device failure considerations
+
+* RSSI: Relative strength signal indicator is where it knows that it needs to hop from access point to another access point. 
+* Transmit power: sets the radio signal to the highest power
+* SSIDs: service set identifier
+
+### Wireless Network Cards
+* Remember IEEE standards
+* Roaming aggressiveness
+* Transmit power
+
+### Wireless Network Card Settings
+* Network Icon
+* Network name (SSID)
+* Signal Strength: usually measured in bars
+* Lock Icon: means we are connected to a secure network
+
+### QoS and Wake-on-LAN
+* Quality of Service Packet Scheduler (QoS): a component that provides network traffic control, including rate-of-flow and *prioritization* services. 
+* Properties of both wires and wireless network adapters
+* QoS (Quality of Service) Packet Scheduler - service bound on the NIC
+* Wake-on-LAN - allows the NIC to bring the PC out of a sleep/powered-off state
+* Might require a setting in the BIOS/UEFI interface to be configured
+
+___________________
+# Network Connection Settings Part 2

@@ -15,8 +15,9 @@
 
 # Algorithm Analysis
 
-Analysis of algorithms is a branch of computer science that studies the performance of algorithms. We need to consider how much time we are using. The algorithm that we are using determines the order of growth. 
-Are we more considered with the time, or using up the least amount of space (memory)? The analysis is to help us make detailed and accurate *predictions*.
+Analysis of algorithms is a branch of computer science that studies the performance of algorithms. It helps us consider how much time we are using and to determine the order of growth. 
+Are we more concerned with the time, or using up the least amount of space (memory)? The analysis is to help us make detailed and accurate *predictions*. We should not be too focused on finding the algorithm with the best performance. 
+Instead we should be focusing on clear and correct code. According to Knuth, "premature optimization is the root of all evil [..] (or at least most of it) in programming."
 
 ### Scientific Method
 * observe
@@ -106,10 +107,7 @@ We can **predict performance** and determine the approximate order of growth of 
 * how much faster can I solve the problem if I get a faster computer?
 * consider the caveats such as large constants, nondominant inner loop, instruction time, system considerations, inputs, multiple parameters, and such.
 
-
-
-
-
+_______
 
 
 # Memory
@@ -124,7 +122,7 @@ We can **predict performance** and determine the approximate order of growth of 
 |long | 8 
 |double | 8
 
-___________________________
+_______
 
 # Objects
 
@@ -145,6 +143,17 @@ ___________________________
 | year (4 bytes)
 | padding (4 bytes)
 
+
+**Node record**
+
+```
+private class Node
+{
+    Item item;
+    Node next;
+}
+```
+
 |**node object** (40 bytes)
 | ------------- |
 | object overhead (16 bytes)
@@ -154,9 +163,11 @@ ___________________________
 
 # Arrays 
 * Arrays in Java are implemented as objects typically with extra overhead for the length.
+    * 24 bytes of header information: 16 bytes for object overhead, 4 bytes for the length, and 4 bytes of padding plus the memory needed to store the values. 
     * An array of N int values uses 24 + 4N bytes
     * An array of N double values uses 24 + 8N bytes
 * An array of objects is an array of references to the objects 
+* When the program calls a method, the system allocates the memory needed for the method (for its local variables) from a special area called the stack. When the method returns to the caller, the memory is returned back to the stack. 
 
 # Sorting
 
