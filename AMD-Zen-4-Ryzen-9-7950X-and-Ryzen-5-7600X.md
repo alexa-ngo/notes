@@ -1,29 +1,29 @@
 # AMD Zen 4 Ryzen 9 is HERE!
 ![AMD Ryzen 9 7950X](https://images.anandtech.com/doci/17585/Ryzen%209%207950X%20Feature_678x452.jpg)
 
-At the end of August 2022, AMD unveiled its Ryzen 7000 series of desktop processors, with four SKUs for the mid-range and high-end market segments. This release is for an entirely new platform, socket AM5. This new release comes with an average of 13% of improved performance mainly coming from the addition of the AVX-512 support. AVX-512 are 512-bit extensions to the 256-bit Advanced Vector Extensions SIMD instructions for x86 instruction set architecture (ISA). 
+On August 29, 2022, AMD revealed its Ryzen 7000 series of desktop processors on the new "Zen 4" architecture on an entirely new platform, AMD Socket AM5. The Ryzen 7000 series has four SKUs for the mid-range and high-end market segments. This new release comes with an average of 13% of improved performance mainly coming from the addition of the AVX-512 support. AVX-512 are 512-bit extensions to the 256-bit Advanced Vector Extensions SIMD instructions for x86 instruction set architecture (ISA). 
 
 This CPU comes with improved performance, power-saving features based on based on TSMC's 6nm process, and AMD has even incorporated an entry-level Radeon RDNA2 architecture-based iGPU into the chip.
 
 **The Platform**
 
-The new AM5 platform was designed for the 7000 series chips, meaning that this series of CPUs are not drop-in compatible with existing AMD motherboards. This AM5 platform provides DDR5 and PCIe 5.0 support to improved power management capabilities. 
+The new AM5 platform was designed for the 7000 series chips, meaning that this series of CPUs are not drop-in compatible with existing AMD motherboards. This AM5 platform provides DDR5 and PCIe 5.0 support to improved power management capabilities. The new Socket AM5 platform is designed with support through 2025. 
 
 
 **AMD Ryzen 7000 versus Ryzen 5000**
-|               |   Cores / Threads  | Base Freq|Turbo Freq |Memory Support | L3 Cache| TDP| MSRP| 
-| ------------- |:-------------:| :-------------:| :-------------:| :-------------:| :-------------:| :-------------:| :-------------:| 
-| **Ryzen 9 7950X**   | 16C / 32T|4.5 GHz|5.7 GHz | DDR5-5200| 64 MB | 170 W | $699
-|Ryzen 9 5950X |  16C / 32T|3.4 GHz|4.9 GHz | DDR4-3200| 64 MB | 105 W | $799
+|               |   Cores / Threads  | Base Freq|Turbo Freq |Memory Support | Total Cache | L3 Cache| TDP| MSRP| 
+| ------------- |:-------------:| :-------------:| :-------------:| -------------:| :-------------:| :-------------:| :-------------:| :-------------:| 
+| **Ryzen 9 7950X**   | 16C / 32T|4.5 GHz|5.7 GHz | DDR5-5200| 80 MB | 64 MB | 170 W | $699
+|Ryzen 5 5950X |  16C / 32T|3.4 GHz|4.9 GHz | DDR4-3200| 72 MB | 64 MB |   105 W | $799
 ||
-| **Ryzen 9 7900X**   | 12C / 24T|4.7 GHz|5.6 GHz | DDR5-5200| 64 MB | 170 W | $549
-|Ryzen 9 5900X |  12C / 24T|3.7 GHz|4.8 GHz | DDR4-3200| 64 MB | 105 W | $549
+| **Ryzen 9 7900X**   | 12C / 24T|4.7 GHz|5.6 GHz | DDR5-5200| 76 MB | 64 MB | 170 W | $549
+|Ryzen 5 5900X |  12C / 24T|3.7 GHz|4.8 GHz | DDR4-3200| 70 MB | 64 MB | 105 W | $549
 ||
-| **Ryzen 9 7700X**   | 8C / 16T|4.5 GHz|5.4 GHz | DDR5-5200| 32 MB | 105 W | $399
-|Ryzen 9 5800X |  8C / 16T|3.8 GHz|4.7 GHz | DDR4-3200| 32 MB | 105 W | $449
+| **Ryzen 9 7700X**   | 8C / 16T|4.5 GHz|5.4 GHz | DDR5-5200| 40 MB | 32 MB | 105 W | $399
+|Ryzen 5 5800X |  8C / 16T|3.8 GHz|4.7 GHz | DDR4-3200| 36 MB | 32 MB | 105 W | $449
 ||
-| **Ryzen 9 7600X**   | 6C / 12T|4.7 GHz|5.3 GHz | DDR5-5200| 32 MB | 105 W | $299
-|Ryzen 9 5600X |  6C / 12T|3.7 GHz|4.6 GHz | DDR4-3200| 32 MB | 65 W | $299
+| **Ryzen 9 7600X**   | 6C / 12T|4.7 GHz|5.3 GHz | DDR5-5200| 38 MB | 32 MB | 105 W | $299
+|Ryzen 5 5600X |  6C / 12T|3.7 GHz|4.6 GHz | DDR4-3200| 35 MB |32 MB | 65 W | $299
 
 
 
