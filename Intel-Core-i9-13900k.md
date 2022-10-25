@@ -1,8 +1,11 @@
-# Intel's 13th generation Core, Raptor Lake
+# Intel's 13th Generation Core, Raptor Lake 🦖
+
+![Intel 13th Generation](https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-09/newsroom-innovation-13thgen-sku.jpg.rendition.intel.web.1920.1080.jpg)
+
 
 Today, October 20, 2022, marks the release of Intel's 13th generation Core processor series, codename Raptor Lake. Raptor Lake is essentially the second half of this fall's desktop CPU releases and the mid-cycle upgrade for Intel’s current LGA-1700 platform. Intel's 13th generation is designed to bring more performance to the same platform as the previous generation, Alder Lake on LGA-1700.
 
-Intel isn't significantly tweaking their CPU architectures for Raptor Lake and is more of a refined version of Alder Lake. The P cores are based on what’s technically a new architecture, Raptor Cove, while the E cores are still based on the same Gracemont architecture on Alder Lake.
+Intel isn't significantly tweaking their CPU architectures for Raptor Lake and is more of a refined version of Alder Lake. The P cores are based on technically a new architecture, Raptor Cove, while the E cores are still based on the same Gracemont architecture on Alder Lake.
 
 
 ### Difference Compared to 12th Generation Alder Lake
@@ -47,7 +50,7 @@ One thing to note about the efficiency cores is that Intel has **lowered the bas
 * Core i5-13600K =  6P and 8E / 20 (4 more cores than the Alder Lake i5-12600K)
 
 ### Z790 Chipset & DDR5-5600 Support
-The launch of the 13th Gen Core chips also comes with a new generation of motherboards from Intel: Z790. For those with the Z690, do not panic! :) The 13th Gen Core chips are backwards-compatible with 600 series boards with the necessary BIOS update. This motherboard has PCIe Gen 5.0 and 4.0 support and USB 3.2 Gen 2x2 - 20 Gbps.
+The launch of the 13th Gen Core chips also comes with a new generation of motherboards from Intel: Z790. For those with the Z690, do not panic! :) The 13th Gen Core chips are backwards-compatible with 600 series boards with the necessary BIOS update. This motherboard has PCIe Gen 5.0 and 4.0 support and USB 3.2 Gen 2x2 - 20 Gbps. Raptor Lake also has to advantage of being launched in the more plentiful motherboard and memory options. They are able to use the same LGA 1700 socket and offer 
 
 ### Perks of Z790:
 * first boards validated for the higher DDR5-5600 memory speeds (whereas Alder Lake running at DDR5-4800)

@@ -15,9 +15,16 @@
 
 # Algorithm Analysis
 
-Analysis of algorithms is a branch of computer science that studies the performance of algorithms. It helps us consider how much time we are using and to determine the order of growth. 
-Are we more concerned with the time, or using up the least amount of space (memory)? The analysis is to help us make detailed and accurate *predictions*. We should not be too focused on finding the algorithm with the best performance. 
-Instead we should be focusing on clear and correct code. According to Knuth, "premature optimization is the root of all evil [..] (or at least most of it) in programming."
+Analysis of algorithms is a branch of computer science that studies the performance of algorithms. How much time we are using?  Milliseconds, seconds, minutes, hours? How much memory are we using? Bytes, kilobytes, megabytes? The analysis helps us make detailed and accurate *predictions*. 
+
+Generally we prioritize time complexity, but space complexity is also an important consideration. There is usually a tradeoff between the amount of space needed and the amount of time needed. Time complexity is a machine-independent way to express how quickly the amount of time required increases as the problem size increases. Only the instructions that are executed the most frequently play a role in the final total. 
+
+Time complexity is a rough guide. Rarely an algorithm will reach it worst case scenario, and it would usually perform better. This is we consider the *average-case complexity*. A classic example of this situation iss quicksort where the worst case is O(n^2^), but on average is O(n log n). 
+
+
+
+We should not be too focused on finding the algorithm with the best performance but on writing clear and correct code. According to Knuth, "premature optimization is the root of all evil [..] (or at least most of it) in programming."
+
 
 ### Scientific Method
 * observe
@@ -34,7 +41,7 @@ D.E. Knuth postulated the total running time of a program is determined by two p
 
 If we know both for all instructions in the program, we can multiply them together and sum for all instructions in the program to get the running time. The challenging part is to find the *frequency of execution* of the statements.
 
-We  can observe the running time using:
+We can observe the running time using:
 * Stopwatch() to create a stopwatch 
 * double elapsedTime() to return elapsed time since creation
 
@@ -183,7 +190,7 @@ Large data set: heapsort, merge sort, or quicksort.
 * Shellsort is in-place, only needs a relatively small amount of code, and does not require use of the call stack. Shellsort is useful where memory is at a premium such as embedded systems and operating system kernels.
 
 # Types of Searches
-###Linear search
+###Linear Search
 Linear search first starts at the first element of the list and compare it to the target value. If they are not equal, move to the next element of the list and compare again. We will keep doing this until either the target value is found, or we reach the end of the list without finding it. 
 ~~~
 def linear_search(a_list, target):
@@ -212,9 +219,23 @@ def binary_search(a_list, target):
     return -1
 ```
 
+**How Binary Search Works**
+1. find the midpoint of the list and compare it to the target
+2. if it matches, we are done
+3. otherwise, if we should look in the first half, it updates the *last* to be the end of the first half. The first is already the beginning of the first half.
+4. however, if we should look in the second half, it updates *first* to be the beginning of the second half. The last is already the end of the second half.
+5. then we go back to the top of the loop to find the midpoint of the section we're looking at now. 
+6. we continue doing this until we find the target value or we find that there are no target values between the first and last. 
+
+We have to have a **sorted** list in order to do a binary sort.
+
+#Sorting
+
 ###Bubble Sort
 
-Bubble sort starts by comparing the first two values in the list. If they are in the wrong order, the algorithm swaps the values, otherwise it leaves them where they are. Next the bubble sort compares the second and third values and does the same thing. This sorting happens until the end of the list. Next, the bubble sort makes another pass through the list except the last value, which we know is in the correct place. At the end of the his pass, we know that the second-largest value is now in the correct place. Bubble sort **does not keep running to the end of the array**. At the end of i passes, i values will be in their correct places. Bubble sort makes n-1 passes (if all but one of the values are in the correct place, then the value must also be in the right place). 
+Bubble sort starts by comparing the first two values in the list. If they are in the wrong order, the algorithm swaps the values, otherwise it leaves them where they are. Next the bubble sort compares the second and third values and does the same thing. This sorting happens until the end of the list. Next, the bubble sort makes another pass through the list except the last value, which we know is in the correct place. At the end of the pass, we know that the second-largest value is now in the correct place. Bubble sort **does not keep running to the end of the array**. At the end of i passes, i values will be in their correct places. Bubble sort makes n-1 passes (if all but one of the values are in the correct place, then the value must also be in the right place). 
+
+Bubble sort needs approximately n^2^ comparisons to sort a list of length n. The time we need to sort a list using bubble sort increases pretty quickly as the size of the list increases. 
 
 ``` 
 def bubble_sort(a_list):    
@@ -247,6 +268,7 @@ def insertion_sort(a_list):
         a_list[pos + 1] = value
 ```
 
+In the worst case, the list starts out in reverse sorted order, so that all of the elements to the left of the "vacant" spot must be compared and shifted over. Although both bubble sort and insertion sort have the same worst-case time complexity, insertion sort is usually much faster. Lists do not usually fall into the worst case of an insertion sort, its inner loop does not have to perform as many comparisons.
 
 #### Facts/Terms
 * array of primitive-type values typically requires 24 bytes of header information (16 byes of object overhead, 4 bytes for the length, and 4 bytes of padding) plus the memory needed to store the values. 

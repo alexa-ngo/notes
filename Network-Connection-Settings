@@ -48,3 +48,63 @@ For an IP address to be used on the Internet, it needs to be a public IP address
 
 ___________________
 # Network Connection Settings Part 2
+
+### Network Connections in Windows 7 and Windows 8
+* Network and Sharing Center
+* Changing Adapter Settings
+* Change Advanced Sharing Settings
+* Windows 7(Only) - Network Map
+* Windows 7/8 = Homegroups
+* Windows 10 does not have Homegroups
+* Creating a new network connections, dial-up & VPN connection settings
+* Troubleshooting
+
+### Network Connection Settings in Windows 10
+* Windows Settings App
+* Network & Internet
+* Network and Sharing Center Link
+
+### Local Area Connection
+* Status, Properties, Diagnose
+* Add/configure clients, protocols, services
+* Protocol bindings
+* View/configure protocol settings
+
+Type of network feature we can install:
+* Client: A client provides access to computers and files on the network you are connecting to.
+* Service: Service provides network functionalities and protocol such as address formatting and file and printer sharing. 
+
+### IP Address Configuration
+* Properties of IPv4 and IPv6
+* IP address, subnet mask (IPv4), default gateway, DNS server address
+* NetBIOs over TCP/IP is the same as NBT. 
+
+### APIPA Configuration
+* APIPA stands for automatic private IP addressing
+* Requires a dynamic IP addressing setting
+* Viewed from the Alternate Configuration Tab
+* Radio button "one-click" configuration
+* Enabled by default
+* Zero Config
+* No gateway, Non-routable
+* stateless = I do not have to configure it
+* stateful = I have to configure it
+
+### Alternate Configuration
+* APIPA Configuration
+* Allow for DHCP to be used and statically define alternate IP Address
+
+### Wireless WAN
+* 3G/4G transmitter
+* Can be integrated, adapter card, USB dongle
+
+### VPN 
+* Network and Sharing Center
+* Connect to a workplace
+* Follow the Network and Center Wizard
+* PPP: Point-to-Point Protocol
+
+
+
+
+

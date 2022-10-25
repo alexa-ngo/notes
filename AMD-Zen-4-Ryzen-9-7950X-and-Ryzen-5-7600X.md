@@ -13,17 +13,17 @@ The new AM5 platform was designed for the 7000 series chips, meaning that this s
 **AMD Ryzen 7000 versus Ryzen 5000**
 |               |   Cores / Threads  | Base Freq|Turbo Freq |Memory Support | Total Cache | L3 Cache| TDP| MSRP| 
 | ------------- |:-------------:| :-------------:| :-------------:| -------------:| :-------------:| :-------------:| :-------------:| :-------------:| 
-| **Ryzen 9 7950X**   | 16C / 32T|4.5 GHz|5.7 GHz | DDR5-5200| 80 MB | 64 MB | 170 W | $699
-|Ryzen 5 5950X |  16C / 32T|3.4 GHz|4.9 GHz | DDR4-3200| 72 MB | 64 MB |   105 W | $799
+| **Ryzen 9 7950X**   | 16C / 32T|4.5 GHz|5.7 GHz |DDR5-5200| 80 MB | 64 MB | 170 W | $699
+|Ryzen 5 5950X |  16C / 32T|3.4 GHz| 4.9 GHz |DDR4-3200| 72 MB | 64 MB |  105 W | $799
 ||
-| **Ryzen 9 7900X**   | 12C / 24T|4.7 GHz|5.6 GHz | DDR5-5200| 76 MB | 64 MB | 170 W | $549
-|Ryzen 5 5900X |  12C / 24T|3.7 GHz|4.8 GHz | DDR4-3200| 70 MB | 64 MB | 105 W | $549
+| **Ryzen 9 7900X**   | 12C / 24T|4.7 GHz|5.6 GHz |DDR5-5200| 76 MB | 64 MB | 170 W | $549
+|Ryzen 5 5900X |  12C / 24T|3.7 GHz| 4.8 GHz |DDR4-3200| 70 MB | 64 MB | 105 W | $549
 ||
-| **Ryzen 9 7700X**   | 8C / 16T|4.5 GHz|5.4 GHz | DDR5-5200| 40 MB | 32 MB | 105 W | $399
-|Ryzen 5 5800X |  8C / 16T|3.8 GHz|4.7 GHz | DDR4-3200| 36 MB | 32 MB | 105 W | $449
+| **Ryzen 9 7700X**   | 8C / 16T|4.5 GHz|5.4 GHz |DDR5-5200| 40 MB | 32 MB | 105 W | $399
+|Ryzen 5 5800X |  8C / 16T|3.8 GHz| 4.7 GHz |DDR4-3200| 36 MB | 32 MB | 105 W | $449
 ||
-| **Ryzen 9 7600X**   | 6C / 12T|4.7 GHz|5.3 GHz | DDR5-5200| 38 MB | 32 MB | 105 W | $299
-|Ryzen 5 5600X |  6C / 12T|3.7 GHz|4.6 GHz | DDR4-3200| 35 MB |32 MB | 65 W | $299
+| **Ryzen 9 7600X**   | 6C / 12T|4.7 GHz|5.3 GHz |DDR5-5200| 38 MB | 32 MB | 105 W | $299
+|Ryzen 5 5600X |  6C / 12T|3.7 GHz| 4.6 GHz |DDR4-3200| 35 MB |32 MB | 65 W | $299
 
 
 
@@ -36,7 +36,7 @@ The new AM5 platform was designed for the 7000 series chips, meaning that this s
 * power-saving features
 
 **Downside**
-* no increase in core count: We do not see an increase in core counts at any price point/market segment. This means all performance gains are from architecture and clockspeeds using more silicon. (Which may be a good thing.)
+* no increase in core count: We do not see an increase in core counts at any price point/market segment. This means that all the performance gains are from architecture and clockspeeds instead of using more silicon. (Which may be a good thing.)
 * need liquid cooler with these chips
 
 **New AM5 Socket** 
@@ -60,7 +60,7 @@ AMD has four new chipsets which are the B650 and X670, as well as their "Extreme
 
 ###New I\O Die: TSMC 6nm For Ryzen 7000
 
-![Zen4 I/O Die](https://www.allround-pc.com/wp-content/uploads/2021/06/AMD-Ryzen-3D-V-Cache-CPU-Prototyp-Computex-2021-Keynote-3.jpg)
+![Zen4 I/O Die] )
 
 
 The Ryzen 7000 series CPUs are made out of chiplets. The Ryzen 7000 desktop chips are built from an I/O Die (IOD) as well as either one or two core complex dies (CCDs) depending on the SKU. The IOD host all of the PCIe 5.0 lanes, DDR5 integrated memory controller (IMC), and integrated GPU based on AMD's Radeon RDNA2 GPU architecture. The IOD is significant compared to AMD's previous IOD, with AMD implementing several new performance and power-saving features from TSMC's 6nm process. 
