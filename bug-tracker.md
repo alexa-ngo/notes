@@ -1,0 +1,1 @@
+2022-10-25 - File Drag and Drop: The box is active even if the dragged file is no longer touching the box.

@@ -58,7 +58,7 @@ Personally, I have two operating systems on my machine. One Windows and one Linu
 
 Features of a dynamic disk:
 1. Create as many volumes. The number of volumes is not limited to just four partitions.
-2. Ability to create ne drive structures using software not possible in MBR drives. It is possible to implement RAID, span volumes over multiple drives, and extend volumes on one or more drives.
+2. Ability to create new drive structures using software not possible in MBR drives. It is possible to implement RAID, span volumes over multiple drives, and extend volumes on one or more drives.
 
 Only lower-end versions of Windows 7 do not support dynamic disks. Every version and edition after that will support dynamic disks.
 
@@ -70,6 +70,8 @@ Only lower-end versions of Windows 7 do not support dynamic disks. Every version
 
 ### GUID Partition Table
 
+GUID, globally unique identifier, is a unique reference number for an object or process that almost has no change of it being a duplication. 
+
 GUID Partition Table is an improvement to MBR:
 
 |               |  MBR          | GPT 	         | 
@@ -80,3 +82,16 @@ GUID Partition Table is an improvement to MBR:
 |Booting        | master boot record and partition table| GPT header and partition entry array |
 
 * GPT drive can have almost unlimited number of primary partitions. Microsoft has limited Windows to 128 partitions. 
+
+
+* hidden partition: Hidden partition, also known as a factory recovery partition, is a primary partition hidden from the operating system. Only special BIOS tools may access a hidden partition. Sometimes PC makers hide a backup copy of an installed OS that we can use to restore the system with. 
+* swap partition: Swap partitions are found in Linux and UNIX systems, where its jobs is to act like RAM when the system needs more RAM than installed. Windows has a similar function with a page file that uses a file instead of a partition. 
+
+________
+#When to Partition
+
+We would need partitioning when:
+* install an OS on a new system
+* adding drives to an existing system
+
+For Windows, through the days of DOS and early Windows we use `FDISK` to partition drives. Now we use Disk Management and the CLI called `diskpart`. Linux uses `GParted` as a partitioning tool. 
