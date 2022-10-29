@@ -60,9 +60,21 @@ def count_words(filename):
         num_words = len(words)
         print(f"The file {filename} has about {num_words} words.")
 
+# We can spice up this program like this.. where we go through a list of files!
 filenames = ['filename.txt', 'news.txt', 'computer.txt']
 for filename in filenames:
     count_words(filename)
 ```
 
-We can spice up this program like this.. where we go through a list of files!
+### Failing Silently
+
+We don't need to report every except we catch. We may even fail silently when an exception occurs and continue on as if nothing happened using ``` pass ```. By using a pass, there is no output in response to the error that was raised. 
+
+```
+try: 
+  --snip--
+except FileNotFoundError:
+  pass
+else:
+  --snip--
+```

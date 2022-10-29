@@ -37,6 +37,7 @@ We can read, write, and append files using 'r', 'w', 'a', and 'r+'. If we omit t
 * rstrip(): using `rstrip()` on each line in the `print()` call eliminates extra blank lines. 
 * readlines(): takes each line from the file and stores it in a list
 * repr(): takes any object as an argument and returns a string representation of the object. `repr()` will show "invisible" characters like `\n` and `\t`. 
+* close()
 
 ```
 filename = 'pi_digits.txt'
@@ -213,6 +214,8 @@ ___________
 The `pickle` module translates almost any type of object into a string for storage in a database. It then translates the strings back into objects. This concept is known as serializing and deserializing. 
 
 Pickling and unpickling has the same effect as copying, however, although the object has the same value, it is generally not the same object. 
+
+Notice how we are using 'wb' and 'rb'. Why is there the letter 'b' in there? The reason being is that pickling reads binary files. 
 
 **Example 1: t1 and t2**
 
