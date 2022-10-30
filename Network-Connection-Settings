@@ -104,7 +104,47 @@ Type of network feature we can install:
 * Follow the Network and Center Wizard
 * PPP: Point-to-Point Protocol
 
+____
 
+#Perform a Network Reset
 
+* When problems are persistent
+* Run the Network Troubleshooter first
+
+###Commandline
+* ipconfig /flushdns: flushes the DNS resolver cache
+* netsh int ip reset resetlog.txt
+* netsh winsock reset: network shell
+* netstat allows us to see the status of the TCP/UDP status
+
+###Windows 10
+* Settings > Network & Internet > Status > Network Reset
+
+###Device Manager
+* Remove all network adapters
+* Restart computer
+* Windows redetect the network adapters
+* Reconfigure network adapters to appropriate configuration parameters
+
+### Viewing TCP/UDP open ports and connections
+**netstat**
+* -a - displays all the connections and listening ports
+* -b - shows the process that has opened the port
+* -n - displays ports and addresses in numerical format, speeds up each query.
+* -p - chooses which protocol (TCP/UDP)
+* -e - Ethernet statistic
+
+### Troubleshooting DNS
+**ipconfig**
+* /displaydns - view the local DNS resolver cache
+* /flushdns - clear the local DNS resolver cache
+
+**nslookup**
+* option HostServer
+* nslookup -type=mx comptia.org 8.8.8.8
+* Non-interactive vs. interactive modes
+
+**dig** - Unix, Linux, MacOS
+**MTR** 0 Unix, Linux, MacOS
 
 
