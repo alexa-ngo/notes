@@ -152,3 +152,62 @@ print_numbers()
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
+
+### Even_Odd Example
+```
+def even_odd():
+
+    for n in range(2, 11, 2):
+        yield n
+
+    for n in range(1, 11, 2):
+        yield n
+
+obj = even_odd()
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+print(next(obj))
+```
+
+###Output:
+```
+2
+4
+6
+8
+10
+1
+3
+5
+7
+9
+```
+
+Here is how we would print a list:
+
+###Print even_odd in list
+```
+def even_odd():
+   for n in range(2, 11, 2):
+       yield n
+
+values = list(even_odd())
+print(values)
+```
+
+### Alphabet
+```
+alphabets = list((chr(i) for i in range(97, 123)))
+print(alphabets)
+```
+### Output
+```
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+```
